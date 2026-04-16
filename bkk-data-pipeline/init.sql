@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS bkk_raw_payloads (
+    id SERIAL PRIMARY KEY,
+    ingested_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    raw_data JSONB NOT NULL
+);
